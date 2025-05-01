@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이예원 이력서</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #fff;
+      padding: 30px 20px;
+      border-right: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .sidebar h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #008080;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 12px 0;
+    }
+
+    .sidebar ul li a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      color: #6639BA;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #6639BA;
+      padding-bottom: 6px;
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #6639BA;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .highlight {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .subinfo {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      object-fit: cover;
+    }
+
+    .url-box {
+      background-color: #f0f0f0;
+      padding: 10px;
+      font-family: monospace;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 8px;
+    }
+
+    a {
+      color: #6639BA;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .profile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .photo {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3><a href="#basic">이예원</a></h3>
+    <ul>
+      <li><a href="#skills">기술 스택</a></li>
+      <li><a href="#career">경력</a></li>
+      <li><a href="#portfolio">포트폴리오</a></li>
+      <li><a href="#education">교육</a></li>
+      <li><a href="#certificate">수상 및 자격</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="section" id="basic">
+      <div class="profile">
+        <div>
+          <div class="highlight">이예원</div>
+          <div class="subinfo">프론트엔드 개발자</div>
+          <p>📧 dapang14@naver.com</p>
+          <p>
+            📝 노션 이력서:
+            <a href="https://polyester-hugger-698.notion.site/YeWon-8935cdf1d3a44207ba7dc8c911892790?pvs=73" target="_blank">Click!</a>
+          </p>
+        </div>
+        <img src="profile.jpg" alt="프로필 사진" class="photo" />
+      </div>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>기술 스택</h2>
+      <p><strong>Front End</strong>: Next.js, React, TypeScript, Tailwind CSS, React Query</p>
+    </div>
+
+    <div class="section" id="career">
+      <h2>경력</h2>
+      <p><strong>졸업작품 프로젝트</strong> – AI를 활용한 효율적인 구독관리 앱</p>
+      <ul>
+        <li>Figma - UI/UX</li>
+        <li>ReactNative - TypeScript프론트엔드개발</li>
+      </ul>
+    </div>
+
+    <div class="section" id="portfolio">
+      <h2>포트폴리오</h2>
+      <p><strong>GitHub</strong></p>
+      <div class="url-box">https://github.com/yewon-le</div>
+      <p><strong>Notion</strong></p>
+      <div class="url-box">https://polyester-hugger-698.notion.site/YeWon-8935cdf1d3a44207ba7dc8c911892790?pvs=73</div>
+    </div>
+
+    <div class="section" id="education">
+      <h2>교육</h2>
+      <p><strong>동양미래대학교</strong> – 컴퓨터소프트웨어공학과 (2023.03 ~ 2026.02)</p>
+    </div>
+
+    <div class="section" id="certificate">
+      <h2>수상 및 자격</h2>
+      <p><strong>전공동아리 DASOM 활동</strong> – 컴퓨터소프트웨어공학과 작품개발 동아리 (2023.08 ~ )</p>
+      <p><strong>교내 개발경진대회</strong> – 장려상 수상</p>
+      
+    </div>
+  </div>
+</body>
+</html>
